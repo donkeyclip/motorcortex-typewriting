@@ -266,4 +266,4 @@ var index = {
   }]
 };
 
-export default index;
+export { index as default };
