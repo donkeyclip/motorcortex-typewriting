@@ -167,7 +167,7 @@ var TypeWritingIncident = /*#__PURE__*/function (_MC$Effect) {
   }]);
 
   return TypeWritingIncident;
-}(MC__default['default'].Effect);
+}(MC__default["default"].Effect);
 
 var TypeWritingIncidentDefinition = {
   npm_name: "type-writing-definition",
@@ -178,7 +178,7 @@ var TypeWritingIncidentDefinition = {
     attributesValidationRules: {}
   }]
 };
-var TypeWritingPlugin = MC__default['default'].loadPlugin(TypeWritingIncidentDefinition);
+var TypeWritingPlugin = MC__default["default"].loadPlugin(TypeWritingIncidentDefinition);
 /*EXPORTED CLIP*/
 
 var ParseText = /*#__PURE__*/function (_MC$HTMLClip) {
@@ -230,7 +230,7 @@ var ParseText = /*#__PURE__*/function (_MC$HTMLClip) {
   }]);
 
   return ParseText;
-}(MC__default['default'].HTMLClip);
+}(MC__default["default"].HTMLClip);
 
 var TypeWritingVal = {
   css: {
