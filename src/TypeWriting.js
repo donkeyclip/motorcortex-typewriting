@@ -1,4 +1,4 @@
-import MC from "@kissmybutton/motorcortex";
+import MC from "@donkeyclip/motorcortex";
 
 /*INNER PLUGIN*/
 class TypeWritingIncident extends MC.Effect {
@@ -20,7 +20,7 @@ class TypeWritingIncident extends MC.Effect {
       return;
     }
 
-    const  duration  = 6000;
+    const duration = 6000;
     const typeFraction = (duration - this.delay - this.hiatus) / duration;
     const delayFraction = this.delay / duration;
     let currentTypefraction = (fraction - delayFraction) / typeFraction;
@@ -73,14 +73,8 @@ export default class ParseText extends MC.HTMLClip {
   }
 
   buildTree() {
-    const {
-      css,
-      showCursor,
-      cursorCss,
-      blinkDelay,
-      blinkhiatus,
-      text,
-    } = this.attrs;
+    const { css, showCursor, cursorCss, blinkDelay, blinkhiatus, text } =
+      this.attrs;
     const typewrite = new TypeWritingPlugin.TypeWritingIncident(
       {
         css,
@@ -92,7 +86,7 @@ export default class ParseText extends MC.HTMLClip {
           text,
         },
       },
-      { duration:6000, selector: ".container" }
+      { duration: 6000, selector: ".container" }
     );
     this.addIncident(typewrite, 0);
   }

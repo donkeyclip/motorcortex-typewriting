@@ -1,4 +1,4 @@
-import MC from '@kissmybutton/motorcortex';
+import MC from '@donkeyclip/motorcortex';
 
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
@@ -255,7 +255,7 @@ var TypeWritingVal = {
   }
 };
 
-var name = "@kissmybutton/motorcortex-typewriting";
+var name = "@donkeyclip/motorcortex-typewriting";
 var version = "3.1.0";
 
 var index = {

@@ -1,6 +1,6 @@
 'use strict';
 
-var MC = require('@kissmybutton/motorcortex');
+var MC = require('@donkeyclip/motorcortex');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -261,7 +261,7 @@ var TypeWritingVal = {
   }
 };
 
-var name = "@kissmybutton/motorcortex-typewriting";
+var name = "@donkeyclip/motorcortex-typewriting";
 var version = "3.1.0";
 
 var index = {
