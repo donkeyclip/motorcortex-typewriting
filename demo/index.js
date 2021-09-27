@@ -1,5 +1,5 @@
-import Player from "@kissmybutton/motorcortex-player";
-import { HTMLClip, loadPlugin } from "@kissmybutton/motorcortex/";
+import Player from "@donkeyclip/motorcortex-player";
+import { HTMLClip, loadPlugin } from "@donkeyclip/motorcortex/";
 import TypeWritingDefinition from "../src/";
 const TypeWriting = loadPlugin(TypeWritingDefinition);
 
@@ -34,7 +34,7 @@ const typewrite = new TypeWriting.TypeWriting(
     blinkhiatus: 2000,
     text: `Wake up, Neo...`,
   },
-  { selector: ".container",duration: 6000, }
+  { selector: ".container", duration: 6000 }
 );
 
 const typewriteOne = new TypeWriting.TypeWriting(
@@ -46,7 +46,7 @@ const typewriteOne = new TypeWriting.TypeWriting(
     blinkhiatus: 2000,
     text: `The Matrix has you...`,
   },
-  { selector: ".container",duration: 6000, }
+  { selector: ".container", duration: 6000 }
 );
 
 clip.addIncident(typewrite, 0);
