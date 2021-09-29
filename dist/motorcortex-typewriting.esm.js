@@ -256,7 +256,7 @@ var TypeWritingVal = {
 };
 
 var name = "@donkeyclip/motorcortex-typewriting";
-var version = "3.1.0";
+var version = "3.0.2";
 
 var index = {
   npm_name: name,
