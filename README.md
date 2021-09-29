@@ -2,13 +2,13 @@
 
 ## Installation
 ```bash
-$ npm install @kissmybutton/motorcortex-typewriting
+$ npm install @donkeyclip/motorcortex-typewriting
 # OR
-$ yarn add @kissmybutton/motorcortex-typewriting
+$ yarn add @donkeyclip/motorcortex-typewriting
 ```
 
 ```javascript
-import TypeWriting from "@kissmybutton/motorcortex-typewriting";
+import TypeWriting from "@donkeyclip/motorcortex-typewriting";
 ```
 
 
@@ -19,8 +19,8 @@ MotorCortex TypeWriting add the type writing effect to your clips.
 ## Documentation
 ### Import and load the plugin to MotorCortex
 ```javascript
-import { HTMLClip, loadPlugin } from "@kissmybutton/motorcortex/";
-import TypeWritingDefinition from "@kissmybutton/motorcortex-typewriting";
+import { HTMLClip, loadPlugin } from "@donkeyclip/motorcortex/";
+import TypeWritingDefinition from "@donkeyclip/motorcortex-typewriting";
 const TypeWriting = loadPlugin(TypeWritingDefinition);
 
 const clip = new HTMLClip({
@@ -84,7 +84,7 @@ clip.play();
 | text | The text to be typed | "" | string |
 
 ### Demo
-https://kissmybutton.github.io/motorcortex-typewriting/demo/
+https://donkeyclip.github.io/motorcortex-typewriting/demo/
 
 
 ## License
