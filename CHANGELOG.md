@@ -1,5 +1,12 @@
 # Changelog
 
+### [3.0.3](https://www.github.com/donkeyclip/motorcortex-typewriting/compare/v3.0.2...v3.0.3) (2021-09-30)
+
+
+### Bug Fixes
+
+* update deps ([d879669](https://www.github.com/donkeyclip/motorcortex-typewriting/commit/d879669d22186d2017ed5389d0f785d2aea70f08))
+
 ### 3.0.2 (2021-09-29)
 
 
