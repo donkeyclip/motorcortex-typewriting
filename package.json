@@ -5,10 +5,10 @@
   "main": "dist/motorcortex-typewriting.cjs.js",
   "module": "dist/motorcortex-typewriting.esm.js",
   "browser": "dist/motorcortex-typewriting.umd.js",
-  "author": "KissMyButton PC (kissmybutton.gr) <opensource@kissmybutton.gr>",
+  "author": "Donkeyclip (donkeyclip.com) <opensource@donkeyclip.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kissmybutton/motorcortex-<plugin>.git"
+    "url": "https://github.com/donkeyclip/motorcortex-typewriting.git"
   },
   "license": "MIT",
   "engines": {
@@ -111,11 +111,5 @@
     "webpack": "^5.59.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.3.1"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
   }
 }
