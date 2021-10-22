@@ -1,6 +1,7 @@
 # MotorCortex Typewriting
 
 ## Installation
+
 ```bash
 $ npm install @donkeyclip/motorcortex-typewriting
 # OR
@@ -11,13 +12,14 @@ $ yarn add @donkeyclip/motorcortex-typewriting
 import TypeWriting from "@donkeyclip/motorcortex-typewriting";
 ```
 
-
 ## Key Concepts / Features
+
 MotorCortex TypeWriting add the type writing effect to your clips.
 
-
 ## Documentation
+
 ### Import and load the plugin to MotorCortex
+
 ```javascript
 import { HTMLClip, loadPlugin } from "@donkeyclip/motorcortex/";
 import TypeWritingDefinition from "@donkeyclip/motorcortex-typewriting";
@@ -71,25 +73,25 @@ const typewriteOne = new TypeWriting.TypeWriting(
 clip.addIncident(typewrite, 0);
 clip.addIncident(typewriteOne, 6000);
 clip.play();
-
 ```
+
 ### Attributes
-| Name | Description | Default | Type |
-| --------- |:-----------| :----| ------: |
-| css | The CSS for the text | "" | string |
-| cursorCss | The CSS for the cursor | "" | string |
-| showCursor | Show or hide cursor | false | boolean |
-| blinkDelay | Blink cursor duration in milliseconds before start typing | 0 | number |
-| blinkhiatus | Blink cursor duration in milliseconds after end of typing | 0 | number |
-| text | The text to be typed | "" | string |
+
+| Name        | Description                                               | Default |    Type |
+| ----------- | :-------------------------------------------------------- | :------ | ------: |
+| css         | The CSS for the text                                      | ""      |  string |
+| cursorCss   | The CSS for the cursor                                    | ""      |  string |
+| showCursor  | Show or hide cursor                                       | false   | boolean |
+| blinkDelay  | Blink cursor duration in milliseconds before start typing | 0       |  number |
+| blinkhiatus | Blink cursor duration in milliseconds after end of typing | 0       |  number |
+| text        | The text to be typed                                      | ""      |  string |
 
 ### Demo
+
 https://donkeyclip.github.io/motorcortex-typewriting/demo/
 
-
 ## License
+
 [MIT License](https://opensource.org/licenses/MIT)
 
-  
-  
-[![Kiss My Button](https://presskit.kissmybutton.gr/logos/kissmybutton-logo-small.png)](https://kissmybutton.gr)
+[<img src="https://presskit.donkeyclip.com/logos/donkey%20clip%20logo.svg" width=250></img>](https://donkeyclip.com)
