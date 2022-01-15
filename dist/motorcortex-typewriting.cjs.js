@@ -131,7 +131,7 @@ function () {
 
 var objectGetOwnPropertyDescriptor = {};
 
-var fails$9 = function (exec) {
+var fails$a = function (exec) {
   try {
     return !!exec();
   } catch (error) {
@@ -139,9 +139,9 @@ var fails$9 = function (exec) {
   }
 };
 
-var fails$8 = fails$9; // Detect IE8's incomplete defineProperty implementation
+var fails$9 = fails$a; // Detect IE8's incomplete defineProperty implementation
 
-var descriptors = !fails$8(function () {
+var descriptors = !fails$9(function () {
   // eslint-disable-next-line es/no-object-defineproperty -- required for testing
   return Object.defineProperty({}, 1, {
     get: function () {
@@ -150,8 +150,19 @@ var descriptors = !fails$8(function () {
   })[1] != 7;
 });
 
+var fails$8 = fails$a;
+var functionBindNative = !fails$8(function () {
+  var test = function () {
+    /* empty */
+  }.bind(); // eslint-disable-next-line no-prototype-builtins -- safe
+
+
+  return typeof test != 'function' || test.hasOwnProperty('prototype');
+});
+
+var NATIVE_BIND$1 = functionBindNative;
 var call$4 = Function.prototype.call;
-var functionCall = call$4.bind ? call$4.bind(call$4) : function () {
+var functionCall = NATIVE_BIND$1 ? call$4.bind(call$4) : function () {
   return call$4.apply(call$4, arguments);
 };
 
@@ -180,11 +191,12 @@ var createPropertyDescriptor$3 = function (bitmap, value) {
   };
 };
 
+var NATIVE_BIND = functionBindNative;
 var FunctionPrototype$1 = Function.prototype;
 var bind = FunctionPrototype$1.bind;
 var call$3 = FunctionPrototype$1.call;
-var uncurryThis$d = bind && bind.bind(call$3, call$3);
-var functionUncurryThis = bind ? function (fn) {
+var uncurryThis$d = NATIVE_BIND && bind.bind(call$3, call$3);
+var functionUncurryThis = NATIVE_BIND ? function (fn) {
   return fn && uncurryThis$d(fn);
 } : function (fn) {
   return fn && function () {
@@ -202,7 +214,7 @@ var classofRaw$1 = function (it) {
 
 var global$o = global$p;
 var uncurryThis$b = functionUncurryThis;
-var fails$7 = fails$9;
+var fails$7 = fails$a;
 var classof$4 = classofRaw$1;
 var Object$4 = global$o.Object;
 var split = uncurryThis$b(''.split); // fallback for non-array-like ES3 and non-enumerable old V8 strings
@@ -290,7 +302,7 @@ var engineV8Version = version$1;
 
 /* eslint-disable es/no-symbol -- required for testing */
 var V8_VERSION$1 = engineV8Version;
-var fails$6 = fails$9; // eslint-disable-next-line es/no-object-getownpropertysymbols -- required for testing
+var fails$6 = fails$a; // eslint-disable-next-line es/no-object-getownpropertysymbols -- required for testing
 
 var nativeSymbol = !!Object.getOwnPropertySymbols && !fails$6(function () {
   var symbol = Symbol(); // Chrome 38 Symbol has incorrect toString conversion
@@ -391,9 +403,11 @@ var store$2 = sharedStore;
 (shared$3.exports = function (key, value) {
   return store$2[key] || (store$2[key] = value !== undefined ? value : {});
 })('versions', []).push({
-  version: '3.20.2',
+  version: '3.20.3',
   mode: 'global',
-  copyright: '© 2022 Denis Pushkarev (zloirock.ru)'
+  copyright: '© 2014-2022 Denis Pushkarev (zloirock.ru)',
+  license: 'https://github.com/zloirock/core-js/blob/v3.20.3/LICENSE',
+  source: 'https://github.com/zloirock/core-js'
 });
 
 var global$e = global$p;
@@ -497,8 +511,8 @@ var documentCreateElement = function (it) {
 };
 
 var DESCRIPTORS$5 = descriptors;
-var fails$5 = fails$9;
-var createElement = documentCreateElement; // Thank's IE8 for his funny defineProperty
+var fails$5 = fails$a;
+var createElement = documentCreateElement; // Thanks to IE8 for its funny defineProperty
 
 var ie8DomDefine = !DESCRIPTORS$5 && !fails$5(function () {
   // eslint-disable-next-line es/no-object-defineproperty -- required for testing
@@ -535,7 +549,7 @@ objectGetOwnPropertyDescriptor.f = DESCRIPTORS$4 ? $getOwnPropertyDescriptor$1 :
 var objectDefineProperty = {};
 
 var DESCRIPTORS$3 = descriptors;
-var fails$4 = fails$9; // V8 ~ Chrome 36-
+var fails$4 = fails$a; // V8 ~ Chrome 36-
 // https://bugs.chromium.org/p/v8/issues/detail?id=3334
 
 var v8PrototypeDefineBug = DESCRIPTORS$3 && fails$4(function () {
@@ -933,7 +947,7 @@ var copyConstructorProperties$1 = function (target, source, exceptions) {
   }
 };
 
-var fails$3 = fails$9;
+var fails$3 = fails$a;
 var isCallable$2 = isCallable$b;
 var replacement = /#|\.prototype\./;
 
@@ -1057,7 +1071,7 @@ var classof$2 = TO_STRING_TAG_SUPPORT ? classofRaw : function (it) {
 };
 
 var uncurryThis$3 = functionUncurryThis;
-var fails$2 = fails$9;
+var fails$2 = fails$a;
 var isCallable = isCallable$b;
 var classof$1 = classof$2;
 var getBuiltIn = getBuiltIn$4;
@@ -1123,7 +1137,7 @@ var createProperty$1 = function (object, key, value) {
   if (propertyKey in object) definePropertyModule.f(object, propertyKey, createPropertyDescriptor(0, value));else object[propertyKey] = value;
 };
 
-var fails$1 = fails$9;
+var fails$1 = fails$a;
 var wellKnownSymbol$1 = wellKnownSymbol$5;
 var V8_VERSION = engineV8Version;
 var SPECIES$1 = wellKnownSymbol$1('species');
@@ -1247,7 +1261,7 @@ var stringTrim = {
 };
 
 var global$1 = global$p;
-var fails = fails$9;
+var fails = fails$a;
 var uncurryThis = functionUncurryThis;
 var toString = toString$2;
 var trim = stringTrim.trim;
