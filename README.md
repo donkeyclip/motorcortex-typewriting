@@ -2,7 +2,7 @@
 
 **Table of Contents**
 
-- [MotorMortex-TypeWriting](#motorcortex-typewriting)
+- [MotorCortex-TypeWriting](#motorcortex-typewriting)
   - [Demo](#demo)
 - [Intro / Features](#intro--features)
 - [Getting Started](#getting-started)
