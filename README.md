@@ -19,7 +19,7 @@
 [Check it out here](https://donkeyclip.github.io/motorcortex-typewriting/demo/)
 
 # Intro / Features
-MotorCortex TypeWriting add the type writing effect to your clips.
+MotorCortex-TypeWriting, adds the type-writing effect to your clips.
 
 This Plugin exposes one incidents:
 - TypeWriting
