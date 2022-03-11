@@ -40,8 +40,8 @@ const typewrite = new TypeWriting.TypeWriting(
 const typewriteOne = new TypeWriting.TypeWriting(
   {
     css: `color:#37ff00;font-size:20px;font-weight:bold`,
-    showCursor: true,
     cursorCss: "color:#37ff00;font-size:20px;font-weight:bold;",
+    showCursor: true,
     blinkDelay: 3000,
     blinkhiatus: 2000,
     text: `The Matrix has you...`,
@@ -55,6 +55,5 @@ clip.addIncident(typewriteOne, 6000);
 new Player({
   scaleToFit: true,
   clip: clip,
-  theme: "mc-green",
   pointerEvents: true,
 });
