@@ -1,5 +1,16 @@
 # Changelog
 
+### [3.0.4](https://www.github.com/donkeyclip/motorcortex-typewriting/compare/v3.0.3...v3.0.4) (2022-03-18)
+
+
+### Bug Fixes
+
+* demo and code structure ([80a63f5](https://www.github.com/donkeyclip/motorcortex-typewriting/commit/80a63f573bf7e2fdabb5ade334044d544ddcb8fb))
+* drop code from demo config ([9fdea2f](https://www.github.com/donkeyclip/motorcortex-typewriting/commit/9fdea2f126fa4fe39ad5655c9a496bfedd0140d4))
+* fix broken config ([fee7cdb](https://www.github.com/donkeyclip/motorcortex-typewriting/commit/fee7cdb08860e291cffef4c30cee2aa6d8b2b171))
+* fix broken webpack config ([d450e39](https://www.github.com/donkeyclip/motorcortex-typewriting/commit/d450e3920d57a2eaddbb1a6895b712a2ffcab3b8))
+* update build and demo files drop old babel config ([6fb0c8b](https://www.github.com/donkeyclip/motorcortex-typewriting/commit/6fb0c8b95cf281d00869d1477b810af8f31889c6))
+
 ### [3.0.3](https://www.github.com/donkeyclip/motorcortex-typewriting/compare/v3.0.2...v3.0.3) (2021-09-30)
 
 
