@@ -1463,7 +1463,7 @@ var TypeWritingVal = {
 };
 
 var name$1 = "@donkeyclip/motorcortex-typewriting";
-var version$1 = "3.0.3";
+var version$1 = "4.0.0";
 var description = "typewriting plugin for MotorCortex";
 var main = "dist/motorcortex-typewriting.cjs.js";
 var module = "dist/motorcortex-typewriting.esm.js";
