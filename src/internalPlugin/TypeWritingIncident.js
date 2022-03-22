@@ -12,9 +12,9 @@ export default class TypeWritingIncident extends Effect {
     return "";
   }
 
-  onProgress(fraction, currentTime) {
+  onProgress(currentTime) {
     let text = "";
-    if (fraction == 1) {
+    if (this.getFraction(currentTime) == 1) {
       this.element.innerHTML = text;
       return;
     }
@@ -22,7 +22,8 @@ export default class TypeWritingIncident extends Effect {
     const duration = 6000;
     const typeFraction = (duration - this.delay - this.hiatus) / duration;
     const delayFraction = this.delay / duration;
-    let currentTypefraction = (fraction - delayFraction) / typeFraction;
+    let currentTypefraction =
+      (this.getFraction(currentTime) - delayFraction) / typeFraction;
     if (currentTypefraction < 0) currentTypefraction = 0;
     const currentTextLength = this.targetValue.length * currentTypefraction;
     text += this.targetValue.slice(0, currentTextLength);
