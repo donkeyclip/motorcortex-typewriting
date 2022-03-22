@@ -1337,10 +1337,10 @@ var TypeWritingIncident = /*#__PURE__*/function (_Effect) {
     }
   }, {
     key: "onProgress",
-    value: function onProgress(fraction, currentTime) {
+    value: function onProgress(currentTime) {
       var text = "";
 
-      if (fraction == 1) {
+      if (this.getFraction(currentTime) == 1) {
         this.element.innerHTML = text;
         return;
       }
@@ -1348,7 +1348,7 @@ var TypeWritingIncident = /*#__PURE__*/function (_Effect) {
       var duration = 6000;
       var typeFraction = (duration - this.delay - this.hiatus) / duration;
       var delayFraction = this.delay / duration;
-      var currentTypefraction = (fraction - delayFraction) / typeFraction;
+      var currentTypefraction = (this.getFraction(currentTime) - delayFraction) / typeFraction;
       if (currentTypefraction < 0) currentTypefraction = 0;
       var currentTextLength = this.targetValue.length * currentTypefraction;
       text += this.targetValue.slice(0, currentTextLength);
@@ -1475,7 +1475,7 @@ var repository = {
 };
 var license = "MIT";
 var engines = {
-	node: ">=8.3.2"
+	node: ">=12"
 };
 var scripts = {
 	lint: "eslint -c .eslintrc src/**/*.js",
@@ -1487,7 +1487,6 @@ var scripts = {
 	"build:demo": "webpack --mode=production --config ./demo/webpack.config.js",
 	test: "HERE GOES YOUR TEST TASK",
 	"test:prod": "npm run lint",
-	commit: "git-cz",
 	prebuild: "rimraf dist",
 	prepare: "husky install"
 };
@@ -1495,29 +1494,8 @@ var keywords = [
 	"motorcortex",
 	"animation"
 ];
-var release = {
-	verifyConditions: [
-		"@semantic-release/changelog",
-		"@semantic-release/npm",
-		"@semantic-release/github",
-		"@semantic-release/git"
-	],
-	prepare: [
-		"@semantic-release/changelog",
-		"@semantic-release/npm",
-		"@semantic-release/git"
-	]
-};
-var config = {
-	commitizen: {
-		path: "cz-conventional-changelog"
-	}
-};
-var dependencies = {
-	"@donkeyclip/motorcortex-anime": "^2.1.16"
-};
 var peerDependencies = {
-	"@donkeyclip/motorcortex": "^7"
+	"@donkeyclip/motorcortex": ">= 8 < 9"
 };
 var devDependencies = {
 	"@babel/cli": "7.16.8",
@@ -1526,28 +1504,18 @@ var devDependencies = {
 	"@babel/plugin-syntax-jsx": "7.16.7",
 	"@babel/plugin-transform-react-jsx": "7.16.7",
 	"@babel/preset-env": "7.16.11",
-	"@commitlint/cli": "16.1.0",
-	"@commitlint/config-conventional": "16.0.0",
-	"@donkeyclip/motorcortex": "7.8.0",
-	"@donkeyclip/motorcortex-player": "^2.5.0",
+	"@donkeyclip/motorcortex": "8.0.1",
+	"@donkeyclip/motorcortex-player": "^2.5.2",
 	"@rollup/plugin-babel": "^5.3.0",
 	"@rollup/plugin-commonjs": "21.0.1",
 	"@rollup/plugin-json": "4.1.0",
 	"@rollup/plugin-node-resolve": "13.1.3",
-	"@semantic-release/changelog": "6.0.1",
-	"@semantic-release/git": "10.0.1",
-	"@semantic-release/github": "8.0.2",
-	"@semantic-release/npm": "9.0.0",
-	"@size-limit/preset-big-lib": "6.0.4",
 	"babel-loader": "8.2.3",
-	commitizen: "4.2.4",
-	concurrently: "7.0.0",
+	concurrently: "^7.0.0",
 	"core-js": "3.20.3",
 	"css-loader": "6.5.1",
-	"cz-conventional-changelog": "3.3.0",
 	eslint: "7.32.0",
 	"eslint-config-prettier": "8.3.0",
-	"eslint-config-standard": "16.0.3",
 	"eslint-plugin-babel": "5.3.1",
 	"eslint-plugin-import": "2.25.4",
 	"eslint-plugin-node": "11.1.0",
@@ -1560,8 +1528,7 @@ var devDependencies = {
 	rimraf: "3.0.2",
 	rollup: "2.66.1",
 	"rollup-plugin-terser": "7.0.2",
-	"semantic-release": "19.0.2",
-	"size-limit": "6.0.4",
+	tslib: "^2.3.1",
 	webpack: "5.67.0",
 	"webpack-cli": "4.9.2",
 	"webpack-dev-server": "4.7.3"
@@ -1588,9 +1555,6 @@ var pkg = {
 		"eslint --fix"
 	]
 },
-	release: release,
-	config: config,
-	dependencies: dependencies,
 	peerDependencies: peerDependencies,
 	devDependencies: devDependencies
 };
