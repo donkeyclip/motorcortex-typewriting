@@ -316,10 +316,10 @@ var store$2 = sharedStore;
 (shared$3.exports = function (key, value) {
   return store$2[key] || (store$2[key] = value !== undefined ? value : {});
 })('versions', []).push({
-  version: '3.20.3',
+  version: '3.21.1',
   mode: 'global',
   copyright: '© 2014-2022 Denis Pushkarev (zloirock.ru)',
-  license: 'https://github.com/zloirock/core-js/blob/v3.20.3/LICENSE',
+  license: 'https://github.com/zloirock/core-js/blob/v3.21.1/LICENSE',
   source: 'https://github.com/zloirock/core-js'
 });
 
@@ -1498,11 +1498,11 @@ var peerDependencies = {
 	"@donkeyclip/motorcortex": ">= 8 < 9"
 };
 var devDependencies = {
-	"@babel/cli": "7.16.8",
-	"@babel/core": "7.16.12",
-	"@babel/eslint-parser": "7.16.5",
+	"@babel/cli": "7.17.6",
+	"@babel/core": "7.17.8",
+	"@babel/eslint-parser": "7.17.0",
 	"@babel/plugin-syntax-jsx": "7.16.7",
-	"@babel/plugin-transform-react-jsx": "7.16.7",
+	"@babel/plugin-transform-react-jsx": "7.17.3",
 	"@babel/preset-env": "7.16.11",
 	"@donkeyclip/motorcortex": "8.0.1",
 	"@donkeyclip/motorcortex-player": "^2.5.2",
@@ -1510,9 +1510,9 @@ var devDependencies = {
 	"@rollup/plugin-commonjs": "21.0.2",
 	"@rollup/plugin-json": "4.1.0",
 	"@rollup/plugin-node-resolve": "13.1.3",
-	"babel-loader": "8.2.3",
+	"babel-loader": "8.2.4",
 	concurrently: "^7.0.0",
-	"core-js": "3.20.3",
+	"core-js": "3.21.1",
 	"css-loader": "6.5.1",
 	eslint: "7.32.0",
 	"eslint-config-prettier": "8.3.0",
