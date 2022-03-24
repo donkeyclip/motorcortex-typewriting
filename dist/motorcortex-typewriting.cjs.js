@@ -1528,7 +1528,7 @@ var devDependencies = {
 	monorepo: "1.2.2",
 	prettier: "2.6.0",
 	rimraf: "3.0.2",
-	rollup: "2.66.1",
+	rollup: "2.70.1",
 	"rollup-plugin-terser": "7.0.2",
 	tslib: "^2.3.1",
 	webpack: "5.67.0",
