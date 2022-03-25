@@ -1524,7 +1524,7 @@ var devDependencies = {
 	husky: "7.0.4",
 	"lint-staged": "12.3.7",
 	monorepo: "1.2.2",
-	prettier: "2.6.0",
+	prettier: "2.6.1",
 	rimraf: "3.0.2",
 	rollup: "2.70.1",
 	"rollup-plugin-terser": "7.0.2",
