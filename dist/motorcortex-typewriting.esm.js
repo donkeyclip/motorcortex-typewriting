@@ -1511,7 +1511,7 @@ var devDependencies = {
 	"@rollup/plugin-json": "4.1.0",
 	"@rollup/plugin-node-resolve": "13.1.3",
 	"babel-loader": "8.2.4",
-	concurrently: "^7.0.0",
+	concurrently: "7.1.0",
 	"core-js": "3.21.1",
 	"css-loader": "6.7.1",
 	eslint: "7.32.0",
