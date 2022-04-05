@@ -1531,7 +1531,7 @@ var devDependencies = {
 	tslib: "2.3.1",
 	webpack: "5.71.0",
 	"webpack-cli": "4.9.2",
-	"webpack-dev-server": "4.7.4"
+	"webpack-dev-server": "4.8.0"
 };
 var pkg = {
 	name: name$1,
