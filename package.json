@@ -1,6 +1,6 @@
 {
   "name": "@donkeyclip/motorcortex-typewriting",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "typewriting plugin for MotorCortex",
   "main": "dist/motorcortex-typewriting.cjs.js",
   "module": "dist/motorcortex-typewriting.esm.js",
