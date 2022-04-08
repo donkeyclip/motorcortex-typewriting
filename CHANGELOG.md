@@ -1,5 +1,18 @@
 # Changelog
 
+## [4.1.0](https://github.com/donkeyclip/motorcortex-typewriting/compare/v4.0.0...v4.1.0) (2022-04-08)
+
+
+### Features
+
+* drop explorer 11 support ([ca13ed7](https://github.com/donkeyclip/motorcortex-typewriting/commit/ca13ed7c83223949dac59d44b12389d76f42d42a))
+* update compatibility with motorcortex ([98562d1](https://github.com/donkeyclip/motorcortex-typewriting/commit/98562d10ab11eb176bea895848834ee439235a00))
+
+
+### Bug Fixes
+
+* delete commitlint.config.js ([f08f8da](https://github.com/donkeyclip/motorcortex-typewriting/commit/f08f8da9f243d9bb7c90220a33b46fe349c0a58e))
+
 ## [4.0.0](https://github.com/donkeyclip/motorcortex-typewriting/compare/v3.0.3...v4.0.0) (2022-03-22)
 
 
