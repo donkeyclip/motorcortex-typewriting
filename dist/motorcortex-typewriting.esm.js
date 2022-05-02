@@ -169,7 +169,7 @@ var devDependencies = {
 	"@rollup/plugin-babel": "5.3.1",
 	"@rollup/plugin-commonjs": "21.1.0",
 	"@rollup/plugin-json": "4.1.0",
-	"@rollup/plugin-node-resolve": "13.2.1",
+	"@rollup/plugin-node-resolve": "13.3.0",
 	"babel-loader": "8.2.5",
 	concurrently: "7.1.0",
 	"core-js": "3.22.3",
