@@ -184,7 +184,7 @@ var devDependencies = {
 	"eslint-plugin-prettier": "4.0.0",
 	"eslint-plugin-promise": "5.2.0",
 	husky: "7.0.4",
-	"lint-staged": "12.4.2",
+	"lint-staged": "12.4.3",
 	monorepo: "1.2.2",
 	prettier: "2.6.2",
 	rimraf: "3.0.2",
