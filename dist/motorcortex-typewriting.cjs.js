@@ -5,7 +5,7 @@ var motorcortex = require('@donkeyclip/motorcortex');
 class TypeWritingIncident extends motorcortex.Effect {
   onGetContext() {
     this.element.style = this.attrs.css;
-    this.cursorElement = "<span style=\"".concat(this.attrs.cursorCss, "\">|</span>");
+    this.cursorElement = `<span style="${this.attrs.cursorCss}">|</span>`;
     this.delay = this.attrs.blinkDelay || 0;
     this.hiatus = this.attrs.blinkhiatus || 0;
   }
@@ -61,11 +61,18 @@ const TypeWritingPlugin = motorcortex.loadPlugin(TypeWritingIncidentDefinition);
 
 class ParseText extends motorcortex.HTMLClip {
   get html() {
-    return "\n        <div class=\"container\">".concat(this.attrs.text, "</div>\n      ");
+    return `
+        <div class="container">${this.attrs.text}</div>
+      `;
   }
 
   get css() {
-    return "\n      .container {\n        width: 100%;\n        height: 100%;\n      }\n    ";
+    return `
+      .container {
+        width: 100%;
+        height: 100%;
+      }
+    `;
   }
 
   buildTree() {
@@ -161,11 +168,11 @@ var peerDependencies = {
 };
 var devDependencies = {
 	"@babel/cli": "7.18.10",
-	"@babel/core": "7.19.0",
-	"@babel/eslint-parser": "7.18.9",
+	"@babel/core": "7.19.1",
+	"@babel/eslint-parser": "7.19.1",
 	"@babel/plugin-syntax-jsx": "7.18.6",
 	"@babel/plugin-transform-react-jsx": "7.19.0",
-	"@babel/preset-env": "7.19.0",
+	"@babel/preset-env": "7.19.1",
 	"@donkeyclip/motorcortex": "9.4.1",
 	"@donkeyclip/motorcortex-player": "2.10.5",
 	"@rollup/plugin-babel": "5.3.1",
