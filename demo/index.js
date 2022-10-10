@@ -55,5 +55,4 @@ clip.addIncident(typewriteOne, 6000);
 new Player({
   scaleToFit: true,
   clip: clip,
-  pointerEvents: true,
 });
