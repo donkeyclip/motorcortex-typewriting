@@ -187,7 +187,7 @@ var devDependencies = {
 	"eslint-plugin-import": "2.26.0",
 	"eslint-plugin-node": "11.1.0",
 	"eslint-plugin-prettier": "4.2.1",
-	"eslint-plugin-promise": "6.1.0",
+	"eslint-plugin-promise": "6.1.1",
 	husky: "8.0.1",
 	"lint-staged": "13.0.3",
 	monorepo: "1.2.2",
