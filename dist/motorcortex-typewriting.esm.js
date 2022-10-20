@@ -7,19 +7,15 @@ class TypeWritingIncident extends Effect {
     this.delay = this.attrs.blinkDelay || 0;
     this.hiatus = this.attrs.blinkhiatus || 0;
   }
-
   getScratchValue() {
     return "";
   }
-
   onProgress(currentTime) {
     let text = "";
-
     if (this.getFraction(currentTime) == 1) {
       this.element.innerHTML = text;
       return;
     }
-
     const duration = 6000;
     const typeFraction = (duration - this.delay - this.hiatus) / duration;
     const delayFraction = this.delay / duration;
@@ -34,14 +30,11 @@ class TypeWritingIncident extends Effect {
     const beforeTyping = currentTime < this.delay;
     const afterTyping = currentTime > this.props.duration - this.hiatus;
     const typing = !beforeTyping && !afterTyping;
-
     if (showCursor && (ishalfOfSecond || typing)) {
       text += this.cursorElement;
     }
-
     this.element.innerHTML = text;
   }
-
 }
 
 var TypeWritingIncidentDefinition = {
@@ -55,15 +48,14 @@ var TypeWritingIncidentDefinition = {
 };
 
 const TypeWritingPlugin = loadPlugin(TypeWritingIncidentDefinition);
-/*EXPORTED CLIP*/
 
+/*EXPORTED CLIP*/
 class ParseText extends HTMLClip {
   get html() {
     return `
         <div class="container">${this.attrs.text}</div>
       `;
   }
-
   get css() {
     return `
       .container {
@@ -72,7 +64,6 @@ class ParseText extends HTMLClip {
       }
     `;
   }
-
   buildTree() {
     const {
       css,
@@ -97,7 +88,6 @@ class ParseText extends HTMLClip {
     });
     this.addIncident(typewrite, 0);
   }
-
 }
 
 const TypeWritingVal = {
@@ -166,7 +156,7 @@ var peerDependencies = {
 };
 var devDependencies = {
 	"@babel/cli": "7.19.3",
-	"@babel/core": "7.19.3",
+	"@babel/core": "7.19.6",
 	"@babel/eslint-parser": "7.19.1",
 	"@babel/plugin-syntax-jsx": "7.18.6",
 	"@babel/plugin-transform-react-jsx": "7.19.0",
