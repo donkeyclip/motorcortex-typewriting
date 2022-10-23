@@ -169,7 +169,7 @@ var devDependencies = {
 	"@rollup/plugin-node-resolve": "13.3.0",
 	"babel-loader": "8.2.5",
 	concurrently: "7.5.0",
-	"core-js": "3.25.5",
+	"core-js": "3.26.0",
 	"css-loader": "6.7.1",
 	eslint: "7.32.0",
 	"eslint-config-prettier": "8.5.0",
