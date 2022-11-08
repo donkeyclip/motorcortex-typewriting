@@ -180,7 +180,7 @@ var devDependencies = {
 	"eslint-plugin-node": "11.1.0",
 	"eslint-plugin-prettier": "4.2.1",
 	"eslint-plugin-promise": "6.1.1",
-	husky: "8.0.1",
+	husky: "8.0.2",
 	"lint-staged": "13.0.3",
 	monorepo: "1.2.2",
 	prettier: "2.7.1",
