@@ -164,7 +164,7 @@ var devDependencies = {
 	"@babel/plugin-transform-react-jsx": "7.19.0",
 	"@babel/preset-env": "7.20.2",
 	"@donkeyclip/motorcortex": "9.5.4",
-	"@donkeyclip/motorcortex-player": "2.10.7",
+	"@donkeyclip/motorcortex-player": "2.10.8",
 	"@rollup/plugin-babel": "5.3.1",
 	"@rollup/plugin-commonjs": "22.0.2",
 	"@rollup/plugin-json": "4.1.0",
