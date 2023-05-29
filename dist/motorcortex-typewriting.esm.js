@@ -172,7 +172,7 @@ var devDependencies = {
 	"core-js": "3.30.2",
 	"css-loader": "6.7.2",
 	eslint: "7.32.0",
-	"eslint-config-prettier": "8.5.0",
+	"eslint-config-prettier": "8.8.0",
 	"eslint-plugin-babel": "5.3.1",
 	"eslint-plugin-import": "2.26.0",
 	"eslint-plugin-node": "11.1.0",
