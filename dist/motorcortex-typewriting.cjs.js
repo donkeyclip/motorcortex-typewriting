@@ -157,12 +157,12 @@ var peerDependencies = {
 	"@donkeyclip/motorcortex": ">= 8 < 10"
 };
 var devDependencies = {
-	"@babel/cli": "7.19.3",
-	"@babel/core": "7.20.5",
-	"@babel/eslint-parser": "7.19.1",
-	"@babel/plugin-syntax-jsx": "7.18.6",
-	"@babel/plugin-transform-react-jsx": "7.19.0",
-	"@babel/preset-env": "7.20.2",
+	"@babel/cli": "7.21.5",
+	"@babel/core": "7.22.1",
+	"@babel/eslint-parser": "7.21.8",
+	"@babel/plugin-syntax-jsx": "7.21.4",
+	"@babel/plugin-transform-react-jsx": "7.22.3",
+	"@babel/preset-env": "7.22.2",
 	"@donkeyclip/motorcortex": "9.5.4",
 	"@donkeyclip/motorcortex-player": "2.10.8",
 	"@rollup/plugin-babel": "5.3.1",
