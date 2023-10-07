@@ -187,7 +187,7 @@ var devDependencies = {
 	rimraf: "3.0.2",
 	rollup: "2.79.1",
 	"rollup-plugin-terser": "7.0.2",
-	tslib: "2.5.2",
+	tslib: "2.6.2",
 	webpack: "5.84.1",
 	"webpack-cli": "4.10.0",
 	"webpack-dev-server": "4.15.1"
